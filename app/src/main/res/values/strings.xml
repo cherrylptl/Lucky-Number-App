@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lucky Number App</string>
+    <string name="welcomeMessage">Welcome to Lucky Number</string>
+    <string name="wishButton">Wish me a Luck!</string>
+    <string name="nameTextFieldHint">Please enter your name</string>
+    <string name="mainBgImage">Main Page Background Image</string>
+    <string name="secondBgImage">Second Page Background Image</string>
+    <string name="secondPageTitle">Your Lucky Number is:</string>
+    <string name="shareButton">Share my Lucky Number</string>
 </resources>
