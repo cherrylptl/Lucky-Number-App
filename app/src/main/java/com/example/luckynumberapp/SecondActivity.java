@@ -26,7 +26,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.luckyNumber.setText(luckyNumberString);
-        binding.secondPageTitle.setText(userName+ " Lucky Number is:");
+        binding.secondPageTitle.setText(userName+ "'s Lucky Number is:");
         binding.shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class SecondActivity extends AppCompatActivity {
     public void shareLuckyNumber(String userName,String shareText){
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT,  userName + " Lucky Number is: " + shareText);
+        shareIntent.putExtra(Intent.EXTRA_TEXT,  userName + "'s Lucky Number is: " + shareText);
 
         Intent chooser = Intent.createChooser(shareIntent, "Share your lucky number");
         startActivity(chooser);
