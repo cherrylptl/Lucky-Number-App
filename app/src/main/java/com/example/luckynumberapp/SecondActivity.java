@@ -7,6 +7,9 @@ import android.view.View;
 
 import com.example.luckynumberapp.databinding.ActivitySecondBinding;
 
+import model.LuckyNumberModel;
+import model.UserModel;
+
 public class SecondActivity extends AppCompatActivity {
 
     ActivitySecondBinding binding;

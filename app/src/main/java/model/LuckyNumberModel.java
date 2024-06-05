@@ -1,12 +1,12 @@
-package com.example.luckynumberapp;
+package model;
 
 import java.util.Random;
 
 public class LuckyNumberModel {
-    static int luckyNumber = 100;
+    public static int luckyNumber;
 
     public static void generateLuckyNumber(){
         Random random = new Random();
-        luckyNumber = 100 + 100 + random.nextInt(900);
+        luckyNumber =  100 + random.nextInt(900);
     }
 }

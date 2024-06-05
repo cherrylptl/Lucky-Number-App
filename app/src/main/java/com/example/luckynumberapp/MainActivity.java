@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import com.example.luckynumberapp.databinding.ActivityMainBinding;
 
+import model.LuckyNumberModel;
+import model.UserModel;
+
 public class MainActivity extends AppCompatActivity {
 
    ActivityMainBinding binding;
