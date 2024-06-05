@@ -45,21 +45,7 @@ The Lucky Number App offers the following features:
 
 ## Screenshots
 
-### Welcome Screen
-![Welcome Screen](https://raw.githubusercontent.com/cherrylptl/Lucky-Number-App/main/ScreenShots/HomeScreen1.png)
-
-### Enter Name
-![Welcome Screen](https://raw.githubusercontent.com/cherrylptl/Lucky-Number-App/main/ScreenShots/HomeScreen2.png)
-
-### Display Lucky Number
-![Display Lucky Number](https://raw.githubusercontent.com/cherrylptl/Lucky-Number-App/main/ScreenShots/LuckyNumberScreen.png)
-
-### Share Lucky Number
-![Share Lucky Number](https://raw.githubusercontent.com/cherrylptl/Lucky-Number-App/main/ScreenShots/ShareScreen.png)
-
-### Share
-![Share](https://raw.githubusercontent.com/cherrylptl/Lucky-Number-App/main/ScreenShots/ClipboardScreen.png)
-
+![Screenshots](https://i.postimg.cc/q7pL9n3H/Screen-Short.png)
 
 ## Usage
 
