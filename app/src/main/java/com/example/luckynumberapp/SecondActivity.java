@@ -4,11 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.example.luckynumberapp.databinding.ActivitySecondBinding;
-
-import model.LuckyNumberModel;
-import model.UserModel;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -19,8 +15,9 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String userName = UserModel.userName;
-        String luckyNumberString = String.valueOf(LuckyNumberModel.luckyNumber);
+        Intent intentObj = getIntent();
+        String userName = intentObj.getStringExtra("username");
+        String luckyNumberString = intentObj.getStringExtra("lucky_number");
 
         binding = ActivitySecondBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

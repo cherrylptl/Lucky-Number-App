@@ -1,25 +1,19 @@
 package com.example.luckynumberapp;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
-
 import com.example.luckynumberapp.databinding.ActivityMainBinding;
-
-import model.LuckyNumberModel;
-import model.UserModel;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-
    ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -31,17 +25,22 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Please Enter Your Name", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    UserModel.setUserName(binding.nameTextField.getText().toString());
-                    LuckyNumberModel.generateLuckyNumber();
-                    secondActivity();
+                   String luckyNumber = String.valueOf(generateLuckyNumber());
+                   secondActivity(binding.nameTextField.getText().toString(), luckyNumber);
                 }
             }
         });
     }
 
-    public void secondActivity()
+    public int  generateLuckyNumber(){
+        Random random = new Random();
+        return  100 + random.nextInt(900);
+    }
+    public void secondActivity(String useName, String luckyNumber)
     {
         Intent intentObj = new Intent(MainActivity.this, SecondActivity.class);
+        intentObj.putExtra("username",useName);
+        intentObj.putExtra("lucky_number",luckyNumber);
         startActivity(intentObj);
     }
 }
