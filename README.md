@@ -2,6 +2,10 @@
 
 Welcome to the Lucky Number App, a simple Android application designed to generate a random lucky number and share it with friends.
 
+## Screenshots
+
+![Screenshots](https://i.postimg.cc/q7pL9n3H/Screen-Short.png)
+
 ## Overview
 
 The Lucky Number App offers the following features:
